@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/fondo2"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.invitado.picoplaca.ActivityPico">
+
+
+    <TextView
+        android:id="@+id/tv_resul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv11"
+        android:layout_alignStart="@+id/tv11"
+        android:layout_x="50dp"
+        android:layout_y="220dp"
+        android:fontFamily="serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_pico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pico"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/tv_resul"
+        android:layout_toRightOf="@+id/tv_resul"
+        android:layout_x="50dp"
+        android:layout_y="250dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pico"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@+id/tv_resul"
+        android:layout_toRightOf="@+id/tv_resul"
+        android:layout_x="16dp"
+        android:background="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="145dp"
+        android:layout_y="26dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="# - #"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_acercaDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_x="76dp"
+        android:layout_y="383dp"
+        android:background="@mipmap/mas"
+        android:onClick="ver" />
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_x="21dp"
+        android:layout_y="123dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="seleccione su No. de placa:"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/num"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/tv11"
+        android:layout_x="278dp"
+        android:layout_y="124dp"
+        android:background="@android:color/holo_orange_light" />
+
+    <Button
+        android:id="@+id/pico"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/num"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/tv11"
+        android:layout_toRightOf="@+id/tv11"
+        android:layout_x="202dp"
+        android:layout_y="306dp"
+        android:background="@mipmap/consultar"
+        android:onClick="calcular" />
+
+</AbsoluteLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo2"
+    tools:context="com.example.invitado.picoplaca.AcercaDe">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_alignEnd="@+id/btn_finalizar"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btn_finalizar"
+        android:layout_marginTop="41dp"
+        android:layout_x="80dp"
+        android:layout_y="232dp"
+
+        android:background="@android:drawable/ic_notification_overlay"
+        android:text="Este proyecto fue creado por: David Benavides"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btn_finalizar"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="87dp"
+        android:layout_x="250dp"
+        android:layout_y="77dp"
+        android:background="@mipmap/x"
+        android:onClick="finalizar"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="443dp" />
+</AbsoluteLayout>

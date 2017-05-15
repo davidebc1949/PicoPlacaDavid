@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Peakplate</string>
+    <string name="textView62">Plate number</string>
+    <string name="pico">Consult</string>
+    <string name="tv_resultado"></string>
+    <string name="tv_pico">Your next  day </string>
+    <string name="tv_placa">Plate</string>
+    <string name="btn_acercaDe">About</string>
+    <string name="textView">This project was created by: David Benavides</string>
+    <string name="btn_Finalizar">Finalize</string>
+</resources>
